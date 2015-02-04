@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+     <script>
+      $(document).ready(function(){
+        for (var i=1; i>=50; i++) {
+          $("p").click(function(){
+            $("p").animate({
+              "height":'+=30',
+              "width" :'+=30'
+            });
+          });
+        }
+      });
+    </script>
+    <style>
+      body {
+       background-color:#00ff00;
+      }
+      p {
+      color:red;
+      }
+      p:hover {
+        color:blue;
+      }
+      div {
+        background-color:yellow;
+        height:100px;
+        width:100px;
+        margin:auto;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <p>Hello World!!</p> 
+    </div>
+  </body>
+</html>
